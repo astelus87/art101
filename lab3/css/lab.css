@@ -16,3 +16,11 @@ img {
     padding-bottom: 20px;
     border-radius: 30px;
 }
+
+#links {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: antiquewhite;
+    width: fit-content;
+}
