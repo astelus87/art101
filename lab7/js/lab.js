@@ -1,22 +1,16 @@
-// index.js - Lab 6 - Arrays and Objects
+// index.js - Lab 7 Functions
 // Author: Samantha Lung
-// Date: 05/25/24
+// Date: 05/02/24
 
-//Define variables 
-myTransport = ["bus ", "uber ", "walk "];
+// declare a variable userName and use window.prompt() to get the user's name from the user
+// sort the letters of the user's name and return those from the function
+// make sure your function uses return to return the results
+// neatly output the user's sorted name
 
-//Create object for my main ride
-myMainRide = {
-  make: "Toyota",
-  model: "Corolla Hybrid",
-  color: "Silver",
-  year: 2021,
-  age: function () {
-      return 2024 - this.year;
-  }
+function sortUserName () {
+  const userName = window.prompt("What's your name?");
+  return userName.split('').sort().join('');
 }
 
-//Output
-document.writeln("Kinds of Transportation I use: " + myTransport + "</br>")
-document.writeln("My Main Ride: <pre>", 
-    JSON.stringify(myMainRide, null, '\t'), "</pre>");
+document.writeln("Fixed your name! : ",
+  sortUserName(), "</br>")
