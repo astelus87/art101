@@ -20,7 +20,11 @@ labArray.map(function(x){
 
 //Print out in console
 var mapResults = labArray.map(multiplyThree);
+console.log("Results: ", labArray)
 console.log("Results: ", mapResults)
+console.log("Results: ", labArray.map(function(x){
+  return (x*10);
+}))
 
 //Print out on site
 var mapResults = 
