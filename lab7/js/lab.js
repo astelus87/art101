@@ -9,7 +9,7 @@
 
 function sortUserName () {
   const userName = window.prompt("What's your name?");
-  return userName.split('').random().join('');
+  return userName.split('').sort().join('');
 }
 
 document.writeln("Fixed your name! : ",

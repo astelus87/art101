@@ -1,22 +1,34 @@
-// index.js - Lab 6 - Arrays and Objects
+// index.js - Lab 8 - Anon Functions
 // Author: Samantha Lung
-// Date: 05/25/24
+// Date: 05/05/24
 
-//Define variables 
-myTransport = ["bus ", "uber ", "walk "];
+//Define an Array
+const labArray = [3, 5, 90, 39, 2, 45, 843, 24];
 
-//Create object for my main ride
-myMainRide = {
-  make: "Toyota",
-  model: "Corolla Hybrid",
-  color: "Silver",
-  year: 2021,
-  age: function () {
-      return 2024 - this.year;
-  }
+//Multiply by 3 function
+function multiplyThree(x) {
+  return (x*3);
 }
 
-//Output
-document.writeln("Kinds of Transportation I use: " + myTransport + "</br>")
-document.writeln("My Main Ride: <pre>", 
-    JSON.stringify(myMainRide, null, '\t'), "</pre>");
+//Make a Map
+var labMap = labArray.map(multiplyThree);
+
+//Anonymous Function Callback with Map
+labArray.map(function(x){
+  return (x*10);
+})
+
+//Print out in console
+var mapResults = labArray.map(multiplyThree);
+console.log("Results: ", mapResults)
+
+//Print out on site
+var mapResults = 
+"Original array: " + "[" + labArray + "]" + "</br>" +
+"Multiplied by 3: " + "[" + labArray.map(multiplyThree) + "]" + "</br>" +
+"Multiplied by 10" + "[" + labArray.map(function(x){
+  return (x*10);
+}) + "]"
+
+// Use jQuery to select the element by its ID and set the HTML content
+$("#output").html(mapResults);
