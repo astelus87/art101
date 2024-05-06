@@ -24,11 +24,9 @@ console.log("Results: ", mapResults)
 
 //Print out on site
 var mapResults = 
-"Original array: " + "[" + labArray + "]" + "</br>" +
-"Multiplied by 3: " + "[" + labArray.map(multiplyThree) + "]" + "</br>" +
-"Multiplied by 10" + "[" + labArray.map(function(x){
-  return (x*10);
-}) + "]"
+  "Original array: " + "[" + labArray + "]" + "</br>" +
+  "Multiplied by 3: " + "[" + labArray.map(multiplyThree) + "]" + "</br>" +
+  "Multiplied by 10" + "[" + labArray.map(function(x){return (x*10);}) + "]"
 
 // Use jQuery to select the element by its ID and set the HTML content
 $("#output").html(mapResults);
