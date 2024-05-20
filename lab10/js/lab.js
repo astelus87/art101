@@ -1,6 +1,6 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Samantha Lung
+// Date: May 17th, 2024
 
 // Constants
 
@@ -29,5 +29,7 @@ const newText = generateRandomText();
   // append a new div to our output div
 $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 });
+
+
 
 
