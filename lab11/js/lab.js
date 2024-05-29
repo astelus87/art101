@@ -35,5 +35,5 @@ $("#submitSort").click(function(){
   // now let's sort it
   userNameSorted = sortString(userName);
   // append a new div to our output div
-  $("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
+  $("#outputSort").html('<div class="text"><p>' + userNameSorted + '</p></div>');
 });
