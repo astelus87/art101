@@ -24,7 +24,7 @@ function sortingHat(str) {
 
 var myButton = document.getElementById("button");
 myButton.addEventListener("click", function() {
-  console.log("Click")
+  // console.log("Click")
   var name = document.getElementById("input").value;
   var house = sortingHat(name);
   newText = "<p>The Sorting Hat has put you in the house of " + house + "</p>";
