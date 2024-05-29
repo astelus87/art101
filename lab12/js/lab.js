@@ -1,6 +1,6 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Samantha Lung
+// Date: May 28th, 2024
 
 // Constants
 
