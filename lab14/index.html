@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 14 - Debug</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,25 +23,54 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 13 - Loops</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>For this lab, we were challenged with debugging an old lab, and fixing any problems that we may have had.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>For this lab, we both chose to debug our lab 14, since we weren't able to get the columns to work the lat time. For this lab, I wasn't sure what was preventing the columns, since I put it in the css to have 3 columns. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>Using the inspect tool on the chrome browser, I discovered that the divider section with the ID "output", where all the numbers came out, had an additional class tagged on called "cols" when all the plugins were submitted. I added the .cols into my css, and the columns showed up!</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
+					Where should we stop? <input type="number" min=0 max="1000" id="max"><br>
+					Which factors should print what? <br>
+					<table>
+						<tr>
+							<th>Factor</th>
+							<th>Prints what?</th>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max="23" id="num0"></td>
+							<td><input type="text" id="text0"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max="23" id="num1"></td>
+							<td><input type="text" id="text1"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max="23" id="num2"></td>
+							<td><input type="text" id="text2"></td>
+						</tr>	
+						<tr>
+							<td><input type="number" min=0 max="23" id="num3"></td>
+							<td><input type="text" id="text3"></td>
+						</tr>											
+					</table>
+					<button id="submit">Run</button>
+			</div>
+			<div class="minor-section">
+					<h2>Output</h2>
 					<div id="output"></div>
+					
 			</div>
 		</section>
 		<nav id="links">

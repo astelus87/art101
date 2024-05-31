@@ -15,30 +15,8 @@ img {
     border-radius: 20px;
 }
 
-.special {
-  background-color: rgb(250, 247, 230);
-  border: dotted 8px rgb(255, 173, 211);
-  color: rgb(227, 145, 95);
-  font-weight: bold;
-}
-
-.special2 {
-  background-color: rgb(230, 255, 216);
-  border: dotted 8px rgb(255, 198, 144);
-  color: rgb(57, 166, 203);
-  font-weight: bold;
-}
-
-.special3 {
-  background-color: rgb(216, 248, 255);
-  border: dotted 8px rgb(185, 255, 144);
-  color: rgb(87, 61, 173);
-  font-weight: bold;
-}
-
-.special4 {
-  background-color: rgb(242, 216, 255);
-  border: dotted 8px rgb(144, 212, 255);
-  color: rgb(173, 61, 123);
-  font-weight: bold;
+#output.cols {
+  column-width: 200px;
+  -webkit-column-width: 200px;
+  -moz-column-width: 200px;
 }
