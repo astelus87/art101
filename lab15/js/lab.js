@@ -6,16 +6,43 @@
 
 // Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// const URL = "https://icanhazdadjoke.com/";
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// $("#my-button").click(function() {
+//   $.ajax(ajaxObj);
+// })
 
-// let's get this party started
-main();
+// const ajaxObj = {
+//   url: URL,
+//   type: "GET",
+//   dataType: "json",
+//   success: ajaxSuccess,
+//   error: ajaxError
+// }
+
+// function ajaxSuccess(data) {
+//   const joke = data.joke;
+//   $("#output").html(joke);
+
+// }
+
+// function ajaxError(request,error){
+//   console.log("Oops:", request, error);
+// }
+const API_ENDPOINT = 'https://yesno.wtf/api';
+
+const showAnswer= (answer) => {
+  document.querySelector('#output').innerHTML = `<p>${answer}</p>`
+};
+
+const fetchAnswer = () => {
+  fetch(API_ENDPOINT)
+    .then(data => data.json())
+    .then(data => showAnswer(data.answer));
+};
+
+document.querySelector('#my-button').addEventListener('click', () => {
+  //console.log('Clicked');
+  fetchAnswer();
+})
+  
